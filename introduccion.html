@@ -44,27 +44,174 @@ Atributos globales: Son aquellos que se pueden aplicar a todos los elementos del
 <!--Etiqueta <p> para los parrafos. Nos sirve para agregar informacion estructurada a nuestro documento. Tambien tienen atributos para modificar tamanio, color, estilo, etc., aunque no es una buena practica dotar de estilo a nuestros parrafos directamente desde el html.-->
 
     <p align="center" style="color: black">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iure illo ipsam ipsum quam quae amet doloribus reiciendis dignissimos dicta. Nisi sit iusto animi quo, expedita nemo aliquam repellendus error.
-    Rem perspiciatis ex necessitatibus facere repellat atque quam itaque <b>JAELUKO</b>commodi corporis iusto cumque inventore iure quod harum modi aspernatur ipsum quidem asperiores at hic rerum, exercitationem sunt blanditiis unde? Pariatur?
+    Rem perspiciatis ex necessitatibus facere repellat atque quam itaque commodi corporis iusto cumque inventore iure quod harum modi aspernatur ipsum quidem asperiores at hic rerum, exercitationem sunt blanditiis unde? Pariatur?
     Ipsa, officia deserunt? Accusantium nemo nesciunt odio doloremque corporis consequatur, cum nihil quos animi quibusdam autem dolor doloribus odit sit tempora nam ad quis. Corporis dolorum iure odio suscipit facere.</p>
-        
+     <hr>
+     <hr>
+     <hr>
     <p align="right" style="color:blueviolet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium aliquid deleniti libero, <b><u>sed</u></b> reprehenderit vitae dolores, nesciunt tenetur consectetur odit in vel quas inventore officia quis dignissimos quasi quia iure?</p>
 
      <P aling="left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, perspiciatis non quod, ab repellendus reprehenderit quasi voluptas soluta doloribus nihil omnis labore aut hic. Laboriosam rem nemo provident maiores soluta.</P>
 
-
-     <p>
+<!--ESTA ES LA FORMA PARA ANIDAR ETIQUETAS-->
+     <p>  
         <b>
             <u>
-                 
+                 <!--INVESTIGAR PORQUE FUNCIONA ESTE Y OTROS NO-->
             </u>
         </b>
      </p>
 
- <!--Etiquetas para formatear texto: strong, em, u, i, b, blockquote
+ <!--Etiquetas para formatear texto: strong, em, u, i, b, blockquote(ADOPTA ESPACIO)
 
 Las etiquetas para formatear texto nos permiten crear texto con diferentes variantes (negritas, cursivas, subrayadas, citas, etc.)
 
 -->
+
+<!--Etiquetas divisorias y separadores hr y br
+
+hr nos sirve para dar una separacion entre parrafos (veremos una linea horizonta que usaremos de separador. no necesita una etiqueta de cierre)
+
+br nos sirve para dar una separacion entre parrafos a manera de salto de linea, y al igual que la etiqueta hr no necesita qtiqueta de cierre
+-->
+
+
+<!--ETIQUETAS DE ENLACE
+los enlaces nos permiten la navegacion por medio de hipervinculos o links que van a realizar la conexion y referencias otros archivos o paginas web dentro de la misma aplicacion o de manera externa
+
+
+href: atributo que nos permite definir la ubicacion de la pagina a la que nos vamos a enlazar. este atributo puede ser una URL o una ubicacion dentro de nuestra carpeta de assets. podremos dentro de las casillas la direccion de la pagina o recurso que queremos enlazar
+
+
+  href: atributo que nos permite definir la ubicacion de la pagina a la que nos vamos a enlazar. Este atributo puede ser una URL, o una ubicacion dentro de nuestra carpeta de assets. Pondremos dentro de las comillas la direccion de la pagina o recurso que queremos enlazar.
+
+    target: el atributo que nos permite definir la ventana de destino, que puede ser una nueva ventana o la misma.
+        - _blank: abre una nueva venta
+        - _self: abrir en la misma venta, este es el atributo por defecto.
+-->
+
+<a> este es un enlace, como no tiene ninguna referencia, no hace nada</a>
+<br>
+<br>
+<a href="http://wwww.google.com">visita la pagina de google para buscar mas fotos de perritos playeros</a>
+<br>
+<br>
+<a href="assets/perritoplayero.jpg" target="_blank"> abre una bonita foto de un perrito playero</a>
+
+<!--otros enlaces quw nos pueden servir mas adelante
+
+    -enlaces de correo: para vincular correos 
+
+    mailto:jazmindef@
+
+    -enlaces de descarga: dentro del atributo href
+se pude colocar la drireccion de la pagina o archivo que se va a descargar y el valor download que nos permite definir el nombre del archivo que se descargar
+-->
+<br>
+<br>
+<a href="mailto:jazimindef@gmail.com">enviame un correo electronico</a>
+
+<a href="assets/perritoplayero.jpg" download>descarga la foto del perrito playero</a>
+
+
+
+<!--etiquetas de listas ordenadas, desordenadas y lista de definiciones 
+(ui, oi, di)
+Las listas en HTML nos permite crear conjuntos de elementos en forma de lista dentro de una página. Estos elementos irán precedidos por un guión o número.
+
+    Los tipos de listas que tenemos en HTMl son:
+
+    - Listas ordenadas: Son aquellas que nos muestran los elementos de la lista en orden. Para representar el orden, tendremos los elementos numeros, es decir, cada uno de los elementos irá precedido de un número o letra que establezca su orden. Las listas ordenadas se representan mediante la etiqueta ol -atributos de las listas oredenadas:
+
+
+    - Listas desordenadas: Las listas desordenadas son aquellas que nos sirven para mostrar los elementos sin ningún tipo de orden, simplemente precedido por una viñeta que puede ser un punto, un cuadrado, etc.
+
+    Atributos de listas desordenadas:
+        - style para definir el estilo de la lista
+            - circle
+            - disc
+            - square
+
+     - Listas de definiciones: Son aquellas que nos sirven para montar listas en las que tenemos la estructura valor y definición. Suelen ser listas para definir términos, como si fuese un diccionario, si bien puede ser cualquier par valor-definicion.
+
+
+-->
+<h3> esta es una lista ordenada de perritos con atributos</h3>
+
+<oi type="a" star="15" >
+     <li>Dalmata</li> <!--list item-->
+     <li>Labrador</li>
+     <li>Chihuahua</li>
+     <li>pitbull</li>
+</oi>
+
+
+ <h3> esta es una lista ordenada de perritos sin atributos</h3>
+
+<ul type="circle">
+    <li>Dalmata</li> <!--list item-->
+    <li>Labrador</li>
+    <li>Chihuahua</li>
+    <li>pitbull</li>
+</ul>
+
+<di> <!--definision list-->
+  <dt>gato</dt> <!--definition tem-->
+  <dd>Mamífero felino de tamaño generalmente pequeño, cuerpo flexible, cabeza redonda, patas cortas, cola larga, pelo espeso y suave, largos bigotes y uñas retráctiles; es carnívoro y tiene gran agilidad, buen olfato, buen oído y excelente visión nocturna; existen muchas especies diferentes</dd>
+  <dt>perro</dt>
+  <dd>Mamífero carnívoro doméstico de la familia de los cánidos que se caracteriza por tener los sentidos del olfato y el oído muy finos, por su inteligencia y por su fidelidad al ser humano, que lo ha domesticado desde tiempos prehistóricos; hay muchísimas razas, de características muy diversas</dd>
+</di>
+
+<!--etiquetas de imagen (img)
+La etiqueta img nos permite agregar una imagen en un documento web. Entre los formatos aceptados más populares para las imágenes son: jpeg, png, gif y webp.
+
+    Debemos tener en centa que el tamaño de la imagen influye en el proceso de carga de la página. Y por tanto se suelen preparar las imagnes para que su peso sea menor. https://tinypng.com/
+
+    Los atributos de la etiqueta img son:
+
+    - src: es el atributo que nos permite definir la ubicación de la imagen.
+    - alt: es el atributo que nos permite definir una descripción de la imagen.
+    - width: es el atributo que nos permite definir el ancho de la imagen.
+    - height: es el atributo que nos permite definir el alto de la imagen.
+
+-->
+
+<img src="/assets/perritoplayero.jpg" width="500px" alt="esta es una foto de un perrito playero">
+
+<br>
+<br>
+
+<!--
+    Etiquetas de divisiones (div y span)
+
+     Las etiquetas div y span no tienen ningun signidicado especial, sólo que la etqueta div se define como un elemento bloque y la etiqueta span es un elemento de linea.
+
+    -div: Este es un bñoque de texto, se utiliza pra agrupar elementos en una sola seccion, es decir, si queremos agrupar una imagen y un texto, debemos utilizar un div.
+-->
+
+<!--/////////////////////////////////////////////-->
+<div align="center" style="color: blueviolet; font-size: larger; font-family: Verdana, Geneva, Tahoma, sans-serif;"> 
+    <img src="/assets/perritoplayero.jpg" alt="Perrito Playero" width="200" height="200">
+    <p>Este texto donde vemos a un bonito perro playero. Este texto está dentro de un div, por lo que si le agregamos estilos directamente al div, podemos agregar colores, fuentes, etc.</p>
+    <p>Incluso podemos agregar listas a este div, y como te puedes dar cuenta, también se le agregan los estilos, por lo que los elementos de la lista también se centrarán de un color morado.</p>
+    <ul>
+        <li> Un elemento de lista centrado </li>
+        <li> Otro elemento de lista centrado </li>
+    </ul>
+    </div>
+<!--/////////////////////////////////////////////-->
+    <div align="center" style="border: 10px dotted blue;">
+        <h3 >Ejemplo de div y span </h3>
+         <p>
+          Esto es un párrafo dentro de un div,
+           <span style="color: red;"> y esto un span dentro de un párrafo. </span>
+         </p>
+       </div>
+<!--/////////////////////////////////////////////-->
+
+
+
+
 
 
 </body>
